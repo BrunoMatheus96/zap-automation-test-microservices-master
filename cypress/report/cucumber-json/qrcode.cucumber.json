@@ -1,0 +1,398 @@
+[
+  {
+    "description": "            Como time de tecnologia\n            Quero executar as requisições do microserviço Cadastro de cliente\n            Para validar o contrato descrito no swagger.",
+    "keyword": "Funcionalidade",
+    "name": "Cadastro",
+    "line": 3,
+    "id": "cadastro",
+    "tags": [],
+    "uri": "qrcode.feature",
+    "elements": [
+      {
+        "id": "cadastro;cadastro-de-usuário-(fluxos-de-sucesso)---1",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Cadastro de usuário (Fluxos de sucesso) - 1",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "realizar a requisição da URL \"/Client/create\" para criação de uma conta na Herupu informando nome \"Bruno Matheus Stefano Leite\", email \"brunolechon2008@gmmai.com\", data de nascimento \"1996-02-02T04:06:29.63\", codigo pessoa \"46966151890\", zip code \"123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "validar o response body de Cadastro de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuário-(fluxos-de-sucesso)---1",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Cadastro de usuário (Fluxos de sucesso) - 1",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "realizar a requisição da URL \"/Client/create\" para criação de uma conta na Herupu informando nome \"DANILLO LIMA CAETANO\", email \"danilo.caetano@gmmai.com\", data de nascimento \"2000-03-02T04:06:29.63\", codigo pessoa \"97116085025\", zip code \"200\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "validar o response body de Cadastro de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuário-(fluxos-de-sucesso)---1",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Cadastro de usuário (Fluxos de sucesso) - 1",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "realizar a requisição da URL \"/Client/create\" para criação de uma conta na Herupu informando nome \"ELISANDRO LERMEN\", email \"elisandro.lamen8@gmmai.com\", data de nascimento \"1984-10-02T04:06:29.63\", codigo pessoa \"23693994064\", zip code \"1234\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "validar o response body de Cadastro de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuário-(fluxos-de-sucesso)---1",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Cadastro de usuário (Fluxos de sucesso) - 1",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "realizar a requisição da URL \"/Client/create\" para criação de uma conta na Herupu informando nome \"GABRIEL SAYEG LUISI\", email \"gabriel.luisi@gmmai.com\", data de nascimento \"1994-04-28T04:06:29.63\", codigo pessoa \"46946345002\", zip code \"0001\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 11,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "validar o response body de Cadastro de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;atualização-de-usuário-(fluxos-de-sucesso)---2",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Atualização de usuário (Fluxos de sucesso) - 2",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "realizar a requisição da URL \"/Client/update\" para alteração de uma conta na Herupu informando nome \"Bruno M S Leite\", email \"brunolechon2008@gmmai.com\", data de nascimento \"1996-02-02T04:06:29.63\", codigo pessoa \"46966151890\", zip code \"123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "validar o response body de atualização de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;atualização-de-usuário-(fluxos-de-sucesso)---2",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Atualização de usuário (Fluxos de sucesso) - 2",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "realizar a requisição da URL \"/Client/update\" para alteração de uma conta na Herupu informando nome \"DANILLO LIMA CAETANO\", email \"danilocaetano@gmmai.com\", data de nascimento \"2000-03-02T04:06:29.63\", codigo pessoa \"97116085025\", zip code \"200\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "validar o response body de atualização de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;atualização-de-usuário-(fluxos-de-sucesso)---2",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Atualização de usuário (Fluxos de sucesso) - 2",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "realizar a requisição da URL \"/Client/update\" para alteração de uma conta na Herupu informando nome \"ELISANDRO LERMEN\", email \"elisandro.lamen8@gmmai.com\", data de nascimento \"1974-10-02T04:06:29.63\", codigo pessoa \"23693994064\", zip code \"1234\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "validar o response body de atualização de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;atualização-de-usuário-(fluxos-de-sucesso)---2",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Atualização de usuário (Fluxos de sucesso) - 2",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "realizar a requisição da URL \"/Client/update\" para alteração de uma conta na Herupu informando nome \"GABRIEL SAYEG LUISI\", email \"gabriel.luisi@gmmai.com\", data de nascimento \"1994-04-28T04:06:29.63\", codigo pessoa \"50046345002\", zip code \"0001\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "validar o response body de atualização de usuário",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;busca-de-clientes-(fluxos-de-sucesso)---3",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Busca de clientes (Fluxos de sucesso) - 3",
+        "tags": [
+          {
+            "name": "@Smoketest",
+            "line": 34
+          },
+          {
+            "name": "@focus",
+            "line": 34
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 36,
+            "name": "realizar a requisição da URL \"/Client/list\" para a busca da lista dos clientes",
+            "result": {
+              "status": "passed",
+              "duration": 1180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 37,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 38,
+            "name": "validar o response body de busca de usuário",
+            "result": {
+              "status": "passed",
+              "duration": 608000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,680 @@
+[
+  {
+    "description": "Como cliente da Conta Zap quero poder consultar, edita-las, incluir, excluir as minhas chaves pix",
+    "keyword": "Funcionalidade",
+    "name": "dict_chave",
+    "line": 2,
+    "id": "dict_chave",
+    "tags": [],
+    "uri": "dict_chave.feature",
+    "elements": [
+      {
+        "id": "dict_chave;consultar-chave-pix",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Consultar chave pix",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "o usuário acessar o ambiente pix para consultar suas chaves",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;excluir-chave",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Excluir chave",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "o usuário realizar a tentativa de excluir uma chave pix",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;incluir-chave-pix",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Incluir chave pix",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 17,
+            "name": "o usuário realizar um cadastro de chave Pix",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;atualizar-instituição-bancária-por-ispb",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Atualizar Instituição Bancária por ISPB",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "o usuário realizar uma atualização da instituição bancária através do código \"29415342\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;remover-instituição-bancária-por-ispd",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Remover Instituição Bancária por ispd",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "o usuário remover a instituição bancária através do código \"00000000\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;incluir-instituição-bancária-por-ispb",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Incluir Instituição Bancária por ISPB",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 29,
+            "name": "o usuário realizar uma inclusão de instituição bancária por ISPB",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 30,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;listar-todos-os-bancos",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Listar todos os Bancos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 33,
+            "name": "o usuário listar todos os Bancos",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 34,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;listar-chave",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Listar chave",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 37,
+            "name": "acionar o comando de listagem da chave \"41199133000116\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 38,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;listar-usuários",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Listar usuários",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 41,
+            "name": "acionar o comando de listagem de usuários com os dados \"5511995317250\" e \"46966151890\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 42,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;busca-da-data-de-abertura-de-conta-por-id",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Busca da data de abertura de conta por ID",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 45,
+            "name": "o usuário buscar a data de abertura do cliente pela conta \"604\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 46,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;busca-da-data-de-abertura-de-conta-por-telefone",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Busca da data de abertura de conta por telefone",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 49,
+            "name": "o usuário buscar a data de abertura do cliente pelo número \"5511995317250\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 50,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;atualizar-o-numero-do-telefone-da-usuario-pix-e-das-chaves-ativas-do-usuário-e-devolve-a-quantidade-de-chaves-atualizadas",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Atualizar o numero do telefone da usuario Pix e das chaves ativas do usuário e devolve a quantidade de chaves atualizadas",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 53,
+            "name": "ocorre a solicitação de atualização do telefone para o usuário Pix",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 54,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;alterar-dados-da-chave",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Alterar dados da Chave",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 57,
+            "name": "realizar a alteração dos dados do dono ou dona da cheve",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 58,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;excluir-chave-com-processamento-tardio",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Excluir chave com processamento tardio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 61,
+            "name": "solicitar a exclusão da chave",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 62,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;incluir-chave-por-processamento-tardio",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "Incluir chave por processamento tardio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 65,
+            "name": "solicitar a inclusão da chave",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 66,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;remover-chave-ownership",
+        "keyword": "Scenario",
+        "line": 69,
+        "name": "Remover chave OWNERSHIP",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 68
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 70,
+            "name": "que a chave Pix \"41199133000116\" foi cadastrada",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 71,
+            "name": "realizar uma exclusão de chave",
+            "result": {
+              "status": "passed",
+              "duration": 30323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 72,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "failed",
+              "duration": 4026000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 400 to equal 200\n    + expected - actual\n\n    -400\n    +200\n\n    at Context.eval (https://apigateway.stg.contazap.com/__cypress/tests?p=cypress\\e2e\\dict_chave.feature:120:36)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dict_chave;remover-chave-portability",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "Remover chave PORTABILITY",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 74
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 76,
+            "name": "que a chave Pix \"41199133000116\" foi cadastrada",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 77,
+            "name": "realizar uma exclusão de chave",
+            "result": {
+              "status": "passed",
+              "duration": 30303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 78,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "failed",
+              "duration": 4020000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 400 to equal 200\n    + expected - actual\n\n    -400\n    +200\n\n    at Context.eval (https://apigateway.stg.contazap.com/__cypress/tests?p=cypress\\e2e\\dict_chave.feature:120:36)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

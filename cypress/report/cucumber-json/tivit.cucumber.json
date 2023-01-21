@@ -1,0 +1,1062 @@
+[
+  {
+    "description": "            Como cliente Tivit\n            Eu desejo realizar todas as funcionalidades que a Tivit me oferece",
+    "keyword": "Funcionalidade",
+    "name": "Tivit",
+    "line": 2,
+    "id": "tivit",
+    "tags": [],
+    "uri": "tivit.feature",
+    "elements": [
+      {
+        "id": "tivit;criar-qrcode-dinâmico-com-vencimento---1",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Criar QRCode dinâmico com vencimento - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 2315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 11,
+            "name": "gerar um QRCode dinâmico com vencimento no valor de \"15.00\"",
+            "result": {
+              "status": "passed",
+              "duration": 12575000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 12,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 13,
+            "name": "retornar os campos \"imageUrl\", \"qrCode\", \"transactionDateTime\", \"txId\"",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;consultar-uma-cobrança-com-vencimento-através-de-um-determinado-código-identificador---2",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Consultar uma cobrança com vencimento através de um determinado código identificador - 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "gerar uma cobrança pelo \"20220830151222074149712920\"",
+            "result": {
+              "status": "passed",
+              "duration": 4581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 17,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 18,
+            "name": "retornar os principais campos validados",
+            "result": {
+              "status": "passed",
+              "duration": 133000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;consultar-webhooks-cadastrados---5",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Consultar Webhooks cadastrados - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 29,
+            "name": "rodar a request para conferir os dados cadastrados",
+            "result": {
+              "status": "passed",
+              "duration": 633000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 30,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 31,
+            "name": "retornar os principais campos do response",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;recuper-as-informações-sobre-o-webhook-pix---6",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Recuper as informações sobre o Webhook Pix - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 34,
+            "name": "rodar o endpoint para recuperar as informações do \"7160c4d3-0162-420d-aac0-52dae42729a3\"",
+            "result": {
+              "status": "passed",
+              "duration": 375000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 35,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 36,
+            "name": "retornar os campos \"chave\", \"webhookUrl\"",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;validar-a-realização-de-um-pix-com-sucesso---7",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Validar a realização de um pix com sucesso - 7",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 40,
+            "name": "o usuário realizar uma requisicao de um pix no valor de \"0.01\" com sucesso",
+            "result": {
+              "status": "failed",
+              "duration": 10536000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://apigateway.stg.contazap.com/gateway/zap-pix-pagamento/v1/tivit/pagamentos/enviar\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://apigateway.stg.contazap.com/gateway/zap-pix-pagamento/v1/tivit/pagamentos/enviar\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Content-Type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"authorization\": \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJDb250YVphcEFwaSIsInN1YiI6InphcGFwaSIsImF1dGgiOiJST0xFX0FQSSIsImlhdCI6MTY2NTA1OTc3MCwibmJmIjoxNjY1MDU5NzcwLCJleHAiOjE2NjUwNjA2NzB9.lEg5U0XrxPrSn4-8sPnzbtRsBjtYamoSZ_7CaZKNTYXtVrWx1LX8rFWnzNYKnMX6CN-y3m0lmbkIf9FxpgA5Xg\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 281\n}\nBody: {\"chave\":\"9f654088-d354-4fda-b6da-d3958e06cb08\",\"codigoPessoa\":\"24175674000195\",\"descricaoPagamento\":\"Teste\",\"valorDaOperacao\":\"0.01\",\"recebedor\":{\"agencia\":1,\"conta\":\"5805797\",\"cpfCnpj\":\"24175674000195\",\"ispb\":\"58160789\",\"nome\":\"BRUNO MATHEUS STEFANO LEITE\",\"tipoDeConta\":\"CACC\"}}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"date\": \"Thu, 06 Oct 2022 12:36:20 GMT\",\n  \"content-type\": \"application/json\",\n  \"transfer-encoding\": \"chunked\",\n  \"connection\": \"keep-alive\",\n  \"vary\": \"Origin, Access-Control-Request-Method, Access-Control-Request-Headers\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-xss-protection\": \"1; mode=block\",\n  \"cache-control\": \"no-cache, no-store, max-age=0, must-revalidate\",\n  \"pragma\": \"no-cache\",\n  \"expires\": \"0\",\n  \"strict-transport-security\": \"max-age=31536000 ; includeSubDomains\",\n  \"x-kong-upstream-latency\": \"10153\",\n  \"x-kong-proxy-latency\": \"6\",\n  \"via\": \"kong/2.8.1\"\n}\nBody: {\n  \"timestamp\": \"2022-10-06T09:36:20Z\",\n  \"status\": 400,\n  \"codigo\": \"479.102\",\n  \"error\": \"PIX - Erro na integração com Bradesco -> 0 *********\",\n  \"errors\": null\n}\n\n    at https://apigateway.stg.contazap.com/__cypress/runner/cypress_runner.js:158786:80\nFrom previous event:\n    at Context.request (https://apigateway.stg.contazap.com/__cypress/runner/cypress_runner.js:158782:35)\nFrom Your Spec Code:\n    at Context.eval (https://apigateway.stg.contazap.com/__cypress/tests?p=cypress\\e2e\\tivit.feature:114:9)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 41,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 42,
+            "name": "retornar os campos \"dataTransacao\", \"transacaoOriginal\" da transação",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;efeturar-uma-consulta-de-transação---8",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Efeturar uma consulta de transação - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1045000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 45,
+            "name": "solicitar a consulta de transação PIX",
+            "result": {
+              "status": "passed",
+              "duration": 440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 46,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 47,
+            "name": "retornar os campos com seus dados respectivos",
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;consultar-todas-as-chaves---9",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "Consultar todas as chaves - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 65,
+            "name": "ver pelo \"35263015000127\"",
+            "result": {
+              "status": "passed",
+              "duration": 724000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 66,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 67,
+            "name": "retornar os campos \"identificacaoDaChave\" das chaves \"aa7bd6ec-a617-4129-8830-b3def23fde0c\" cadastradas com seus respectivos status \"ATIVO\"",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;consultar-as-chaves-ativas---10",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "Consultar as chaves ativas - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 74,
+            "name": "rodar a requisião para consulta de chaves pelo \"35263015000127\"",
+            "result": {
+              "status": "passed",
+              "duration": 389000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 75,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 76,
+            "name": "retornar os dados \"identificacaoDaChave\", \"status\", \"tipoDaChave\" do request tipo GET",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;consultar-a-chave---11",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "Consultar a chave - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1002000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 79,
+            "name": "realizar vizualização da chave",
+            "result": {
+              "status": "passed",
+              "duration": 451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 80,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 81,
+            "name": "retornar os dados \"identificacaoDaChave\", \"status\", \"tipoDaChave\" do request tipo POST",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;criar-uma-nova-chave-para-uso-no-pix---12",
+        "keyword": "Scenario",
+        "line": 83,
+        "name": "Criar uma nova chave para uso no PIX - 12",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 84,
+            "name": "rodar o script",
+            "result": {
+              "status": "passed",
+              "duration": 531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 85,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 86,
+            "name": "retornar o \"transactionId\"",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;buscar-o-saldo-pelos-dados-informados-da-conta-pj---13",
+        "keyword": "Scenario",
+        "line": 89,
+        "name": "Buscar o saldo pelos dados informados da conta PJ - 13",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 90,
+            "name": "rodar a request para buscar o saldo pelo CNPJ",
+            "result": {
+              "status": "passed",
+              "duration": 1175000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 91,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 92,
+            "name": "retornar os campos \"idConta\", \"valor\" com seus respectivos dados",
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;validar-consulta-de-saldo-com-sucesso---14",
+        "keyword": "Scenario",
+        "line": 95,
+        "name": "Validar consulta de saldo com sucesso - 14",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 96,
+            "name": "realizo a verificação de saldo",
+            "result": {
+              "status": "passed",
+              "duration": 301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 97,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 98,
+            "name": "validar se o campo \"idTransacao\" não é nulo",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 99,
+            "name": "retornar o idConta \"34\" com seu respectivo valor",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;validar-a-tentativa-de-realizar-um-pix-tivit-sem-saldo-na-conta---15",
+        "keyword": "Scenario",
+        "line": 101,
+        "name": "Validar a tentativa de realizar um pix tivit sem saldo na conta - 15",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 102,
+            "name": "tento realizar um envio de um pix sem saldo",
+            "result": {
+              "status": "passed",
+              "duration": 1891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 103,
+            "name": "o sistema deve retornar um status code 400",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 104,
+            "name": "a API deve retornar o código \"417.000\" com a mensagem \"Saldo insuficiente para realizar a operação\"",
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;gerar-txid---16",
+        "keyword": "Scenario",
+        "line": 106,
+        "name": "Gerar txid - 16",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1068000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 107,
+            "name": "rodar o request",
+            "result": {
+              "status": "passed",
+              "duration": 1342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 108,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 109,
+            "name": "o código do txId",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;efeturar-a-criação-de-uma-cobrança-imediata---17",
+        "keyword": "Scenario",
+        "line": 112,
+        "name": "Efeturar a criação de uma cobrança imediata - 17",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1002000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 113,
+            "name": "que um código é gerado antes de gerar a cobrança",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 114,
+            "name": "rodar a request de cobrança imediata",
+            "result": {
+              "status": "passed",
+              "duration": 4602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 115,
+            "name": "o sistema deve retornar um status code 201",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 116,
+            "name": "retornar os principais campos da cobrança",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;efetuar-a-revisão-de-uma-cobrança-imediata---18",
+        "keyword": "Scenario",
+        "line": 119,
+        "name": "Efetuar a revisão de uma cobrança imediata - 18",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 120,
+            "name": "que um código é gerado antes de gerar a cobrança",
+            "result": {
+              "status": "passed",
+              "duration": 308000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 121,
+            "name": "rodar a request de cobrança imediata",
+            "result": {
+              "status": "passed",
+              "duration": 2155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 122,
+            "name": "efetuar a revisão via API",
+            "result": {
+              "status": "passed",
+              "duration": 2234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 123,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 124,
+            "name": "retorna os principais campos revisados",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;atualizar-status---19",
+        "keyword": "Scenario",
+        "line": 127,
+        "name": "Atualizar status - 19",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 128,
+            "name": "que o QRCode dinâmico foi gerado em \"10.00\"",
+            "result": {
+              "status": "passed",
+              "duration": 2855000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 129,
+            "name": "rodar a request para mudar o status do QR Code gerado",
+            "result": {
+              "status": "passed",
+              "duration": 4641000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 130,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 131,
+            "name": "retornar status atualizado",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;atualizar-a-modalidade-e-alterar-o-valor---20",
+        "keyword": "Scenario",
+        "line": 134,
+        "name": "Atualizar a modalidade e alterar o valor - 20",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 135,
+            "name": "que o QRCode dinâmico foi gerado em \"30.00\"",
+            "result": {
+              "status": "passed",
+              "duration": 2393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 136,
+            "name": "rodar a request para atualizar o status",
+            "result": {
+              "status": "passed",
+              "duration": 1774000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 137,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;atualizar-e-solicitar-o-pagador---21",
+        "keyword": "Scenario",
+        "line": 140,
+        "name": "Atualizar e solicitar o pagador - 21",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1098000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 141,
+            "name": "que o QRCode dinâmico foi gerado em \"10.00\"",
+            "result": {
+              "status": "passed",
+              "duration": 10169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 142,
+            "name": "rodar a request para atualizar a solicitação do pagador",
+            "result": {
+              "status": "passed",
+              "duration": 2795000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 143,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 144,
+            "name": "retonar os dados atualizados da solicitação",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tivit;efetuar-a-alteração-de-modelo-contábil-por-cnpjprincipal-e-cnpjintermediaria---22",
+        "keyword": "Scenario",
+        "line": 146,
+        "name": "Efetuar a alteração de modelo contábil por cnpjPrincipal e cnpjIntermediaria - 22",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1057000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 147,
+            "name": "rodar o request de mudança dos modelos via API",
+            "result": {
+              "status": "passed",
+              "duration": 1008000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 148,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

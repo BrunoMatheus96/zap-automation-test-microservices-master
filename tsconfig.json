@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node", "@bahmutov/cy-api"],
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": [
+    "**/*.ts"
+, "cypress/e2e/pix/pix_steps.js"  ]
+}

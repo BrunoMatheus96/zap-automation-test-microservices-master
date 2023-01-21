@@ -1,0 +1,213 @@
+[
+  {
+    "description": "Eu como funcionário zap \nQuero poder rodas os requests\nPara testar via API as funcionalidades utilizadas pelos clientes através do Bot ",
+    "keyword": "Funcionalidade",
+    "name": "Saldos Conta zap",
+    "line": 3,
+    "id": "saldos-conta-zap",
+    "tags": [],
+    "uri": "zap_saldos.feature",
+    "elements": [
+      {
+        "id": "saldos-conta-zap;buscar-o-extrato-pelos-dados-informados-da-conta-(telefone-e/ou-cpf/cnpj)",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Buscar o extrato pelos dados informados da conta (Telefone e/ou CPF/CNPJ)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 2327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "rodar a requst para buscar o extrato dos dados informados",
+            "result": {
+              "status": "passed",
+              "duration": 827000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saldos-conta-zap;buscar-o-extrato-pelo-id-da-conta-informada",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Buscar o extrato pelo id da conta informada",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1017000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 17,
+            "name": "rodar a requst para buscar o extrato pelo id \"616\" da conta em STG com a chave \"WstemFwcm2\"",
+            "result": {
+              "status": "passed",
+              "duration": 360000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saldos-conta-zap;buscar-o-extrato-paginado-pelos-dados-informados-da-conta-(telefone-e/ou-cpf/cnpj)",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Buscar o extrato paginado pelos dados informados da conta (Telefone e/ou CPF/CNPJ)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "rodar a request para buscar extrato pelos dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saldos-conta-zap;buscar-o-saldo-pelos-dados-informados-da-conta-(telefone-e/ou-cpf/cnpj)",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Buscar o saldo pelos dados informados da conta (Telefone e/ou CPF/CNPJ)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 999000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 26,
+            "name": "rodar a requst para buscar o saldo pelos dados informados pelo cliente",
+            "result": {
+              "status": "passed",
+              "duration": 469000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 27,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saldos-conta-zap;buscar-o-saldo-pelo-id-da-conta-informada",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Buscar o saldo pelo id da conta informada",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "rodar a requst para buscar o saldo através do id \"616\" da conta em STG com a chave \"WstemFwcm2\"",
+            "result": {
+              "status": "passed",
+              "duration": 320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

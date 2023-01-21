@@ -1,0 +1,1023 @@
+[
+  {
+    "description": "            Eu como funcionário zap\n            Quero rodar as request de sincronismo Dict\n            Para que os cenários possam ajudar demias QAs, Devs e colaboradores da área de negócio",
+    "keyword": "Funcionalidade",
+    "name": "Sincronismo dict",
+    "line": 3,
+    "id": "sincronismo-dict",
+    "tags": [],
+    "uri": "dict_sincronismo_api.feature",
+    "elements": [
+      {
+        "id": "sincronismo-dict;consultar-o-documento-sync-manual---1",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Consultar o documento sync manual - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "rodar o request para consulta de arquivos manuais pelo \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 1373000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-o-documento-sync-manual---1",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Consultar o documento sync manual - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "rodar o request para consulta de arquivos manuais pelo \"20210205190516781\"",
+            "result": {
+              "status": "passed",
+              "duration": 920000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-o-documento-sync-manual---1",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Consultar o documento sync manual - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 995000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "rodar o request para consulta de arquivos manuais pelo \"20220914141223170\"",
+            "result": {
+              "status": "passed",
+              "duration": 864000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-query-de-status-para-o-arquivo-sync-manual---2",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Consultar a query de status para o arquivo sync manual - 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "rodar a request para consultar a query de status dos sync pelo \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-query-de-status-para-o-arquivo-sync-manual---2",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Consultar a query de status para o arquivo sync manual - 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 910000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "rodar a request para consultar a query de status dos sync pelo \"20210205190516781\"",
+            "result": {
+              "status": "passed",
+              "duration": 250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-query-de-status-para-o-arquivo-sync-manual---2",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Consultar a query de status para o arquivo sync manual - 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 898000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "rodar a request para consultar a query de status dos sync pelo \"20220914141223170\"",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-o-status-do-sync-link-query-manualmente---3",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Consultar o status do sync link query manualmente - 3",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 38,
+            "name": "rodar a request para a cconsultar o status da query de forma manual pelo \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 285000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 39,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente---4",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Criar o arquivo sync manualmente - 4",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 42,
+            "name": "rodar a request para a criação manual",
+            "result": {
+              "status": "passed",
+              "duration": 4032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 43,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente-pelo-tipo---5",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Criar o arquivo sync manualmente pelo tipo - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "rodar a request para a criação manual pelo \"CPF\"",
+            "result": {
+              "status": "passed",
+              "duration": 851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente-pelo-tipo---5",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Criar o arquivo sync manualmente pelo tipo - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "rodar a request para a criação manual pelo \"CNPJ\"",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente-pelo-tipo---5",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Criar o arquivo sync manualmente pelo tipo - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "rodar a request para a criação manual pelo \"EVP\"",
+            "result": {
+              "status": "passed",
+              "duration": 846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente-pelo-tipo---5",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Criar o arquivo sync manualmente pelo tipo - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 961000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "rodar a request para a criação manual pelo \"PHONE\"",
+            "result": {
+              "status": "passed",
+              "duration": 866000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;criar-o-arquivo-sync-manualmente-pelo-tipo---5",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Criar o arquivo sync manualmente pelo tipo - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "rodar a request para a criação manual pelo \"EMAIL\"",
+            "result": {
+              "status": "passed",
+              "duration": 928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;fixar-o-retono-do-request-para-criar-o-o-arquivo-do-sync-manualmente---6",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "Fixar o retono do request para criar o o arquivo do sync manualmente - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 58,
+            "name": "rodar a request para fixar o retorno do request para o \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 59,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;fixar-o-retono-do-request-para-criar-o-o-arquivo-do-sync-manualmente---6",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Fixar o retono do request para criar o o arquivo do sync manualmente - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 910000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 58,
+            "name": "rodar a request para fixar o retorno do request para o \"20210205190516781\"",
+            "result": {
+              "status": "passed",
+              "duration": 268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 59,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;fixar-o-retono-do-request-para-criar-o-o-arquivo-do-sync-manualmente---6",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "Fixar o retono do request para criar o o arquivo do sync manualmente - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 58,
+            "name": "rodar a request para fixar o retorno do request para o \"20220914141223170\"",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 59,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;solicitar-a-lista-do-banco-de-dados---7",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "Solicitar a lista do banco de dados - 7",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 72,
+            "name": "rodar a request para solicitação da listagem do banco de dados",
+            "result": {
+              "status": "passed",
+              "duration": 1238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 73,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-lista-de-eventos-manualmente---8",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "Consultar a lista de eventos manualmente - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 76,
+            "name": "rodar a request para consultar os eventos pelo \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 77,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-lista-de-eventos-manualmente---8",
+        "keyword": "Scenario",
+        "line": 84,
+        "name": "Consultar a lista de eventos manualmente - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 76,
+            "name": "rodar a request para consultar os eventos pelo \"20210205190516781\"",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 77,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;consultar-a-lista-de-eventos-manualmente---8",
+        "keyword": "Scenario",
+        "line": 86,
+        "name": "Consultar a lista de eventos manualmente - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 76,
+            "name": "rodar a request para consultar os eventos pelo \"20220914141223170\"",
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 77,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;performar-o-sincronismo-manual-pelo-tipo---10",
+        "keyword": "Scenario",
+        "line": 99,
+        "name": "Performar o sincronismo manual pelo tipo - 10",
+        "tags": [
+          {
+            "name": "@timeout",
+            "line": 88
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 94,
+            "name": "rodar a request para performar o sincronismo de forma manual pelo \"CPF\"",
+            "result": {
+              "status": "passed",
+              "duration": 1655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 95,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;performar-o-sincronismo-manual-pelo-tipo---10",
+        "keyword": "Scenario",
+        "line": 103,
+        "name": "Performar o sincronismo manual pelo tipo - 10",
+        "tags": [
+          {
+            "name": "@timeout",
+            "line": 88
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 94,
+            "name": "rodar a request para performar o sincronismo de forma manual pelo \"EMAIL\"",
+            "result": {
+              "status": "failed",
+              "duration": 30191000000,
+              "error_message": "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://apigateway.stg.contazap.com/gateway/zapdictsincronismo/v1/dict/sincronismo/manual/EMAIL\n\nNo response was received within the timeout.\n    at https://apigateway.stg.contazap.com/__cypress/runner/cypress_runner.js:158804:78\nFrom previous event:\n    at Context.request (https://apigateway.stg.contazap.com/__cypress/runner/cypress_runner.js:158803:15)\nFrom Your Spec Code:\n    at Context.eval (https://apigateway.stg.contazap.com/__cypress/tests?p=cypress\\e2e\\dict_sincronismo_api.feature:114:9)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 95,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;performar-o-retorno-do-sincronismo-da-query-manualmente---11",
+        "keyword": "Scenario",
+        "line": 112,
+        "name": "Performar o retorno do sincronismo da query manualmente - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 2870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 106,
+            "name": "rodar o request para performar o sincronismo dos arquivos manuais \"20210205191824026\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 107,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;performar-o-retorno-do-sincronismo-da-query-manualmente---11",
+        "keyword": "Scenario",
+        "line": 114,
+        "name": "Performar o retorno do sincronismo da query manualmente - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 106,
+            "name": "rodar o request para performar o sincronismo dos arquivos manuais \"20210205190516781\"",
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 107,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sincronismo-dict;performar-o-retorno-do-sincronismo-da-query-manualmente---11",
+        "keyword": "Scenario",
+        "line": 116,
+        "name": "Performar o retorno do sincronismo da query manualmente - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 106,
+            "name": "rodar o request para performar o sincronismo dos arquivos manuais \"20220914141223170\"",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 107,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,723 @@
+[
+  {
+    "description": " Como cliente da Conta Zap\n Eu desejo realizar todas as funcionalidades de Pix no Bot da Conta Zap\n Para realizar cadastro e exclusão de chave pix, enviar pix por chave, manual, visualizar e alterar meus limites de transação, limite mensal e limite noturno, consultar meu extrato Pix\n e realizar devoluçção de transação.",
+    "keyword": "Funcionalidade",
+    "name": "Pix",
+    "line": 3,
+    "id": "pix",
+    "tags": [],
+    "uri": "pix.feature",
+    "elements": [
+      {
+        "id": "pix;validar-a-realização-de-um-pix-com-sucesso---1",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Validar a realização de um pix com sucesso - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1003000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "o usuário realizar uma requisicao de um pix no valor de \"0.05\" com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 1240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "validar se o campo \"idTransacao\" não é nulo",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;consultar-o-pagamento-pix-com-sucesso---2",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Consultar o pagamento Pix com sucesso - 2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 963000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 19,
+            "name": "o usuário realiza um pagamento pix no dado '247a59f0ce33429e98f52f683fbe9ed3'",
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 20,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;consulta-de-recebimento-de-um---com-sucesso---3",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Consulta de recebimento de um   com sucesso - 3",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1002000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "o usuário recebe um pix de uma conta externa de dado 'E60746948202104161927L3987n45hoI'",
+            "result": {
+              "status": "passed",
+              "duration": 306000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;consultar-todas-transacoes-do-pix---4",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Consultar todas transacoes do pix - 4",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "o usuário realizar uma consulta para ver todas as transações pix",
+            "result": {
+              "status": "passed",
+              "duration": 1089000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 29,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;listar-comprovantes-de-transações-filtrado-por-cliente---5",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Listar comprovantes de transações filtrado por cliente - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 969000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 33,
+            "name": "o usuário solicita o comprovante de transação",
+            "result": {
+              "status": "passed",
+              "duration": 414000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 34,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;buscar-dados-do-comprovante-para-impressão---6",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Buscar dados do comprovante para impressão - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 968000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 37,
+            "name": "o usuário quer consultar uma transação em específico \"250261?force=false\"",
+            "result": {
+              "status": "passed",
+              "duration": 479000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 38,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;validar-consulta-limite-de-transacao-de-conta---8",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Validar consulta limite de transacao de conta - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1004000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 46,
+            "name": "realize a requisicao  de consulta de limite da conta \"492\"",
+            "result": {
+              "status": "passed",
+              "duration": 285000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 47,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite---9",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Realizar alteracao de limite - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 986000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 50,
+            "name": "realizo a requisicao de alterar o limite de transacao da conta \"10000\"",
+            "result": {
+              "status": "passed",
+              "duration": 294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 51,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite---9",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Realizar alteracao de limite - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 50,
+            "name": "realizo a requisicao de alterar o limite de transacao da conta \"100000\"",
+            "result": {
+              "status": "passed",
+              "duration": 316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 51,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite---9",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "Realizar alteracao de limite - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 950000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 50,
+            "name": "realizo a requisicao de alterar o limite de transacao da conta \"1000000\"",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 51,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-mensal---10",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Realizar alteracao de limite mensal - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 60,
+            "name": "realizo a requisicao de alterar o limite mensal da conta \"10000\"",
+            "result": {
+              "status": "passed",
+              "duration": 289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 61,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-mensal---10",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Realizar alteracao de limite mensal - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 980000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 60,
+            "name": "realizo a requisicao de alterar o limite mensal da conta \"100000\"",
+            "result": {
+              "status": "passed",
+              "duration": 306000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 61,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-mensal---10",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "Realizar alteracao de limite mensal - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 60,
+            "name": "realizo a requisicao de alterar o limite mensal da conta \"1000000\"",
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 61,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-noturno---11",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "Realizar alteracao de limite noturno - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 70,
+            "name": "realizo a requisicao de alterar o limite noturno da conta \"10000\"",
+            "result": {
+              "status": "passed",
+              "duration": 289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 71,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-noturno---11",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "Realizar alteracao de limite noturno - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 990000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 70,
+            "name": "realizo a requisicao de alterar o limite noturno da conta \"100000\"",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 71,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;realizar-alteracao-de-limite-noturno---11",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Realizar alteracao de limite noturno - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 970000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 70,
+            "name": "realizo a requisicao de alterar o limite noturno da conta \"1000000\"",
+            "result": {
+              "status": "passed",
+              "duration": 286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 71,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pix;devolver-parcial-de-um-pix---12",
+        "keyword": "Scenario",
+        "line": 80,
+        "name": "Devolver parcial de um pix - 12",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 909000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 81,
+            "name": "que o usuário recebeu um pix",
+            "result": {
+              "status": "passed",
+              "duration": 794000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 82,
+            "name": "consultou seu extrato",
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 83,
+            "name": "o usuário solicita uma devolução parcial de pix no valor de \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 84,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

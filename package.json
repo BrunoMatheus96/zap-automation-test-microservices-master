@@ -1,0 +1,40 @@
+{
+  "name": "contazap-microservicos",
+  "version": "1.0.0",
+  "description": "Testes e2e da contazap utilizando tecnologia cypress",
+  "main": "index.js",
+  "dependencies": {
+    "cucumber-html-reporter": "^5.5.0",
+    "moment": "^2.29.1",
+    "multiple-cucumber-html-reporter": "^1.18.3",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@bahmutov/cy-api": "^1.4.3",
+    "@cypress/webpack-preprocessor": "^4.1.5",
+    "cypress": "^10.3.1",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^4.46.0"
+  },
+  "scripts": {
+    "report": "node cypress/report/cucumber-config/cucumber-reporter.ts",
+    "report:clear": "rm -r cypress/report/cucumber-json/ || true",
+    "cypress:run": "npx cypress run",
+    "cypress:open": "npx cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renato Bernardes",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./cypress/e2e",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/report/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

@@ -1,0 +1,1333 @@
+[
+  {
+    "description": "            Como cliente Conta Zap\n            Eu desejo rodar as requests do swagger de contas\n            Para testar via API as funcionalidades utilizadas pelos clientes através do Bot",
+    "keyword": "Funcionalidade",
+    "name": "Contas",
+    "line": 3,
+    "id": "contas",
+    "tags": [],
+    "uri": "zap_contas.feature",
+    "elements": [
+      {
+        "id": "contas;aprovar-a-alteração-do-contato---1",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Aprovar a alteração do contato - 1",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 2074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "rodar a request de aprovação de alteração de contato",
+            "result": {
+              "status": "passed",
+              "duration": 395000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "o sistema deve retornar um status code 400",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "a mensagem \"Status do registro de alteração não é válido. ORIGINAL\"",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;realizar-a-consulta-dos-históricos-de-alterações-dos-contatos---4",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Realizar a consulta dos históricos de alterações dos contatos - 4",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 26,
+            "name": "rodar a request para realização de consulta dos históricos de alteração de contatos",
+            "result": {
+              "status": "passed",
+              "duration": 271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 27,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 28,
+            "name": "retornar os campos com números",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;solicitar-a-alteração-do-contato---5",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Solicitar a alteração do contato - 5",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 898000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 32,
+            "name": "rodar a request para solicitação de alteração de contato com id \"70\"",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 33,
+            "name": "o sistema deve retornar um status code 400",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 34,
+            "name": "a frase \"Existe um registro de alteração agendado para o contato. Id: 72\"",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;realizar-o-envio-de-sms-ao-telefone-informado-para-ativação---6",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Realizar o envio de SMS ao telefone informado para ativação - 6",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 39,
+            "name": "rodar a request para enviar SMS ao telefone \"5511962503655\"",
+            "result": {
+              "status": "passed",
+              "duration": 981000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 40,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;realizar-o-envio-de-sms-ao-telefone-informado-para-ativação-com-telefone-e-botkey--7",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Realizar o envio de SMS ao telefone informado para ativação com Telefone e Botkey- 7",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 44,
+            "name": "rodar a request para envio de SMS ao telefone \"5511932226811\" com a chave do bot \"WstemFwcm2\"",
+            "result": {
+              "status": "passed",
+              "duration": 857000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 45,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;ativação-do-telefone-do-contato---8",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Ativação do telefone do contato - 8",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 867000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 48,
+            "name": "rodar a request para ativar o telefone do contato",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 49,
+            "name": "o sistema deve retornar um status code 400",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 50,
+            "name": "o indicativo que a senha não é valida",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;recuperar-dados-do-titular-da-conta-pelo-cpf/cnpj---9",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Recuperar dados do titular da conta pelo cpf/cnpj - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 880000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 54,
+            "name": "rodar a request para recuperação dos dados do titular pelo \"46966151890\" e \"5511995317250\"",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 55,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 56,
+            "name": "retonar o cpf, data de nascimento \"1996-02-02\", email \"brunolechon2008@gmail.com\", nome \"Bruno Matheus Stefano Leite\", sexo \"M\", telefone",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;recuperar-dados-do-titular-da-conta-pelo-cpf/cnpj---9",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Recuperar dados do titular da conta pelo cpf/cnpj - 9",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 856000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 54,
+            "name": "rodar a request para recuperação dos dados do titular pelo \"41199133000116\" e \"5511916264493\"",
+            "result": {
+              "status": "passed",
+              "duration": 248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 55,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 56,
+            "name": "retonar o cpf, data de nascimento \"2021-05-15\", email \"b.stefanoleite@gmail.com\", nome \"Bruno Leite\", sexo \"M\", telefone",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;alterar-o-termo-de-aceite-de-bets---10",
+        "keyword": "Scenario",
+        "line": 69,
+        "name": "Alterar o termo de aceite de bets - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 64,
+            "name": "rodar a request para alteração do termo de aceite de Bets pelo id \"646\" com as \"true\"",
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 65,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;alterar-o-termo-de-aceite-de-bets---10",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Alterar o termo de aceite de bets - 10",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 64,
+            "name": "rodar a request para alteração do termo de aceite de Bets pelo id \"646\" com as \"false\"",
+            "result": {
+              "status": "passed",
+              "duration": 261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 65,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;validar-email-na-blacklist---11",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "Validar email na blacklist - 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 73,
+            "name": "rodar a request para validação de e-mail na blacklist",
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 74,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 75,
+            "name": "retornar na frase \"Conteudo não consta na blacklist\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-conta-pelo-id-da-conta-do-contato---12",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "Consultar conta pelo id da conta do contato - 12",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 909000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 79,
+            "name": "rodar a request para consulta de conta pelo \"646\" de conta subordinada",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 80,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 81,
+            "name": "retorna os dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;bloquear-conta-digital---13",
+        "keyword": "Scenario",
+        "line": 84,
+        "name": "Bloquear conta digital - 13",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 85,
+            "name": "rodar a request para bloqueio de conta digital através dos dados \"369666\", \"13\", \"25\"",
+            "result": {
+              "status": "passed",
+              "duration": 293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 86,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;desbloquear-conta-digital---14",
+        "keyword": "Scenario",
+        "line": 88,
+        "name": "Desbloquear conta digital - 14",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 834000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 89,
+            "name": "rodar a request para desbloquear de conta digital através dos dados \"369666\", \"25\"",
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 90,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;abrir-conta-digital---15",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "Abrir conta digital - 15",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 93,
+            "name": "rodar a request para abertura de conta",
+            "result": {
+              "status": "passed",
+              "duration": 1424000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 94,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 95,
+            "name": "retornar os dados da conta criada",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;cancelamento-da-conta-digital---16",
+        "keyword": "Scenario",
+        "line": 97,
+        "name": "Cancelamento da conta digital - 16",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 98,
+            "name": "que a conta foi criada",
+            "result": {
+              "status": "passed",
+              "duration": 21076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 99,
+            "name": "rodar a request para cancelamento de conta",
+            "result": {
+              "status": "passed",
+              "duration": 880000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 100,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 101,
+            "name": "retornar a frase de confirmação do cancelamento da conta",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-a-conta-pelo-código-da-pessoa-(cpf-ou-cnpj)-do-contato---17",
+        "keyword": "Scenario",
+        "line": 111,
+        "name": "Consultar a conta pelo código da pessoa (CPF ou CNPJ) do contato - 17",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 988000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 105,
+            "name": "rodar a request para consulta de conta por \"46966151890\"",
+            "result": {
+              "status": "passed",
+              "duration": 369000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 106,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 107,
+            "name": "retornar os campos principais preenchidos",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-a-conta-pelo-código-da-pessoa-(cpf-ou-cnpj)-do-contato---17",
+        "keyword": "Scenario",
+        "line": 112,
+        "name": "Consultar a conta pelo código da pessoa (CPF ou CNPJ) do contato - 17",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 105,
+            "name": "rodar a request para consulta de conta por \"41199133000116\"",
+            "result": {
+              "status": "passed",
+              "duration": 365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 106,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 107,
+            "name": "retornar os campos principais preenchidos",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-conta-pelo-código-da-pessoa-(cpf/cnpj)-do-contato---18",
+        "keyword": "Scenario",
+        "line": 123,
+        "name": "Consultar conta pelo código da pessoa (CPF/CNPJ) do contato - 18",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 117,
+            "name": "rodar a request para consulta de conta com chave \"WstemFwcm2\", \"46966151890\" e \"5511995317250\"",
+            "result": {
+              "status": "passed",
+              "duration": 451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 118,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 119,
+            "name": "retornar os dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-conta-pelo-código-da-pessoa-(cpf/cnpj)-do-contato---18",
+        "keyword": "Scenario",
+        "line": 124,
+        "name": "Consultar conta pelo código da pessoa (CPF/CNPJ) do contato - 18",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 117,
+            "name": "rodar a request para consulta de conta com chave \"WstemFwcm2\", \"41199133000116\" e \"5511916264493\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 118,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 119,
+            "name": "retornar os dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-conta-pelo-código-da-pessoa-(cpf/cnpj)-do-contato---19",
+        "keyword": "Scenario",
+        "line": 134,
+        "name": "Consultar conta pelo código da pessoa (CPF/CNPJ) do contato - 19",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 874000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 128,
+            "name": "rodar a request para consulta de conta com chave \"WstemFwcm2\", \"46966151890\" e \"5511995317250\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 129,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 130,
+            "name": "retornar os dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-conta-pelo-código-da-pessoa-(cpf/cnpj)-do-contato---19",
+        "keyword": "Scenario",
+        "line": 135,
+        "name": "Consultar conta pelo código da pessoa (CPF/CNPJ) do contato - 19",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 128,
+            "name": "rodar a request para consulta de conta com chave \"WstemFwcm2\", \"41199133000116\" e \"5511916264493\"",
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 129,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 130,
+            "name": "retornar os dados da conta",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;contato-cliente---20",
+        "keyword": "Scenario",
+        "line": 137,
+        "name": "Contato Cliente - 20",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1083000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 138,
+            "name": "rodar a request para consultar o contato do cliente",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 139,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 140,
+            "name": "retorna os dados do cliente",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;consultar-se-o-telefone-existe-para-o-bot-informado---21",
+        "keyword": "Scenario",
+        "line": 142,
+        "name": "Consultar se o telefone existe para o bot informado - 21",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 1107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 143,
+            "name": "rodar a request para consulta de telefone",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 144,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 145,
+            "name": "retornar os dados ja cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;retornar-da-base-de-dados-da-oi,-o-registro-do-cliente-disponível-para-abertura-de-conta---22",
+        "keyword": "Scenario",
+        "line": 148,
+        "name": "Retornar da base de dados da Oi, o registro do cliente disponível para abertura de conta - 22",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 837000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 149,
+            "name": "rodar a request para consulta da base de dados da Oi",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 150,
+            "name": "o sistema deve retornar um status code 404",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;alterar-cadastro---23",
+        "keyword": "Scenario",
+        "line": 154,
+        "name": "Alterar Cadastro - 23",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 155,
+            "name": "rodar a request para alteração de cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 400000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 156,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;buscar-contas---24",
+        "keyword": "Scenario",
+        "line": 158,
+        "name": "Buscar Contas - 24",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 934000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 159,
+            "name": "rodar a request para buscar contas de clientes cadastrados",
+            "result": {
+              "status": "passed",
+              "duration": 255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 160,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 161,
+            "name": "retornar os dados da conta pesquisada",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contas;login-backoffice---25",
+        "keyword": "Scenario",
+        "line": 163,
+        "name": "Login Backoffice - 25",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário tenha um token de acesso ao service",
+            "result": {
+              "status": "passed",
+              "duration": 853000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 164,
+            "name": "rodar a request para logas no backoffice",
+            "result": {
+              "status": "passed",
+              "duration": 289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 165,
+            "name": "o sistema deve retornar um status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
